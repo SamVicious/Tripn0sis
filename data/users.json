@@ -12,5 +12,12 @@
     "email": "asnalk3qo@mozmail.com",
     "password": "$2b$10$d4GQ.NlkRQeHznFDZUloX.HURPS6GVEaJcXUgss.SGhzh2J1P1FiS",
     "createdAt": "2025-07-21T03:05:59.234Z"
+  },
+  {
+    "id": "1753163183645",
+    "name": "Shiva",
+    "email": "qq@qq.qq",
+    "password": "$2b$10$vdZFuCupeV3MMPFsUApdwuIplmWMacVl7GcJtvvqMeDsWQgcDGlaq",
+    "createdAt": "2025-07-22T05:46:23.645Z"
   }
 ]

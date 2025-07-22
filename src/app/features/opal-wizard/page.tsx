@@ -12,6 +12,8 @@ interface OpalData {
   lastTrip: string;
   suggestedTopUp: number;
   savings: number;
+  cardNumber?: string;
+  lastUpdated?: string;
 }
 
 interface TransportAlert {
@@ -26,54 +28,84 @@ export default function OpalWizardPage() {
   const [opalData, setOpalData] = useState<OpalData | null>(null);
   const [alerts, setAlerts] = useState<TransportAlert[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [cardNumber, setCardNumber] = useState<string>("");
+  const [isLinked, setIsLinked] = useState<boolean>(false);
 
   useEffect(() => {
-    // Simulate API call to Transport NSW
-    const fetchOpalData = async () => {
-      setLoading(true);
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      const mockOpalData: OpalData = {
-        balance: 23.45,
-        weeklySpend: 47.80,
-        weeklyCapReached: false,
-        dailySpend: 8.20,
-        dailyCapReached: false,
-        lastTrip: "Central to Circular Quay",
-        suggestedTopUp: 25.00,
-        savings: 12.30
-      };
-
-      const mockAlerts: TransportAlert[] = [
-        {
-          id: '1',
-          type: 'savings',
-          title: 'Weekly Cap Alert',
-          message: 'You\'re $2.20 away from hitting your weekly travel cap! Take more trips this week to maximize value.',
-          action: 'Plan more trips'
-        },
-        {
-          id: '2',
-          type: 'info',
-          title: 'Sunday Funday',
-          message: 'Remember: $2.80 daily cap on Sundays after 8am. Perfect for exploring!',
-        },
-        {
-          id: '3',
-          type: 'warning',
-          title: 'Low Balance Warning',
-          message: 'Your balance is getting low. Top up $25 to avoid being caught short.',
-          action: 'Top up now'
-        }
-      ];
-
-      setOpalData(mockOpalData);
-      setAlerts(mockAlerts);
+    // Check if card is already linked in local storage
+    const savedCardNumber = localStorage.getItem('opalCardNumber');
+    if (savedCardNumber) {
+      setCardNumber(savedCardNumber);
+      setIsLinked(true);
+      fetchOpalData(savedCardNumber);
+    } else {
+      // Still fetch the default data
+      fetchOpalData();
       setLoading(false);
-    };
-
-    fetchOpalData();
+    }
   }, []);
+
+  const fetchOpalData = async (cardNum?: string) => {
+    setLoading(true);
+    setError(null);
+
+    try {
+      // Build the URL, including card number if available
+      const url = cardNum
+        ? `/api/opal-card?cardNumber=${encodeURIComponent(cardNum)}`
+        : '/api/opal-card';
+
+      const response = await fetch(url);
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to fetch Opal data');
+      }
+
+      if (data.success) {
+        setOpalData(data.opalData);
+        setAlerts(data.alerts);
+      } else {
+        // If we have partial data, still use it
+        if (data.opalData) {
+          setOpalData(data.opalData);
+          setAlerts(data.alerts || []);
+        }
+        if (data.error) {
+          setError(data.error);
+        }
+      }
+    } catch (err) {
+      console.error('Error fetching Opal data:', err);
+      setError('Unable to connect to Transport NSW. Please try again later.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleLinkCard = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!cardNumber || cardNumber.trim().length < 5) {
+      setError('Please enter a valid Opal card number');
+      return;
+    }
+
+    // Save card number to local storage
+    localStorage.setItem('opalCardNumber', cardNumber);
+    setIsLinked(true);
+
+    // Fetch data with the provided card number
+    await fetchOpalData(cardNumber);
+  };
+
+  const handleUnlinkCard = () => {
+    localStorage.removeItem('opalCardNumber');
+    setCardNumber("");
+    setIsLinked(false);
+    fetchOpalData(); // Fetch default data
+  };
 
   const getAlertColor = (type: string) => {
     switch (type) {
@@ -113,6 +145,66 @@ export default function OpalWizardPage() {
       </header>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Card Linking Section */}
+        <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Your Opal Card</h2>
+
+          {error && (
+            <div className="mb-4 bg-red-50 border border-red-200 text-red-700 p-3 rounded-lg">
+              <p className="text-sm">{error}</p>
+            </div>
+          )}
+
+          {!isLinked ? (
+            <form onSubmit={handleLinkCard} className="space-y-4">
+              <div>
+                <label htmlFor="cardNumber" className="block text-sm font-medium text-gray-700 mb-1">
+                  Link your Opal card for real-time data and personalized savings tips
+                </label>
+                <div className="flex space-x-2">
+                  <input
+                    type="text"
+                    id="cardNumber"
+                    placeholder="Enter your Opal card number"
+                    value={cardNumber}
+                    onChange={(e) => setCardNumber(e.target.value)}
+                    className="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+                  />
+                  <button
+                    type="submit"
+                    className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-colors"
+                  >
+                    Link Card
+                  </button>
+                </div>
+                <p className="text-xs text-gray-500 mt-1">
+                  This is for demonstration purposes. Your card details are stored locally only.
+                </p>
+              </div>
+            </form>
+          ) : (
+            <div className="bg-green-50 p-4 rounded-lg">
+              <div className="flex justify-between items-center">
+                <div>
+                  <div className="text-sm text-gray-600">Linked Opal Card</div>
+                  <div className="font-semibold">•••• •••• {cardNumber.slice(-4)}</div>
+                  {opalData?.lastUpdated && (
+                    <div className="text-xs text-gray-500 mt-1">
+                      Last updated: {new Date(opalData.lastUpdated).toLocaleString()}
+                    </div>
+                  )}
+                </div>
+                <button
+                  onClick={handleUnlinkCard}
+                  className="text-sm text-red-600 hover:text-red-800"
+                >
+                  Unlink Card
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+
         {loading ? (
           <div className="text-center py-12">
             <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-green-600"></div>
@@ -124,7 +216,7 @@ export default function OpalWizardPage() {
             {opalData && (
               <div className="bg-white rounded-lg shadow-md p-6 mb-8">
                 <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-2xl font-bold text-gray-900">Your Opal Card</h2>
+                  <h2 className="text-2xl font-bold text-gray-900">Balance & Usage</h2>
                   <div className="bg-green-100 px-4 py-2 rounded-lg">
                     <span className="text-green-800 font-semibold">Balance: ${opalData.balance.toFixed(2)}</span>
                   </div>
@@ -156,7 +248,11 @@ export default function OpalWizardPage() {
                     <div className="text-3xl mb-2">🚊</div>
                     <div className="text-sm text-gray-600">Last Trip</div>
                     <div className="text-sm font-semibold text-gray-900">{opalData.lastTrip}</div>
-                    <div className="text-xs text-gray-500">2 hours ago</div>
+                    <div className="text-xs text-gray-500">
+                      {opalData.lastUpdated
+                        ? `Last updated: ${new Date(opalData.lastUpdated).toLocaleTimeString()}`
+                        : "2 hours ago"}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -165,24 +261,30 @@ export default function OpalWizardPage() {
             {/* Smart Alerts */}
             <div className="mb-8">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Smart Alerts & Tips</h3>
-              <div className="space-y-4">
-                {alerts.map((alert) => (
-                  <div key={alert.id} className={`border rounded-lg p-4 ${getAlertColor(alert.type)}`}>
-                    <div className="flex items-start">
-                      <span className="text-2xl mr-3">{getAlertIcon(alert.type)}</span>
-                      <div className="flex-1">
-                        <h4 className="font-semibold mb-1">{alert.title}</h4>
-                        <p className="text-sm mb-2">{alert.message}</p>
-                        {alert.action && (
-                          <button className="text-sm font-medium underline hover:no-underline">
-                            {alert.action}
-                          </button>
-                        )}
+              {alerts.length > 0 ? (
+                <div className="space-y-4">
+                  {alerts.map((alert) => (
+                    <div key={alert.id} className={`border rounded-lg p-4 ${getAlertColor(alert.type)}`}>
+                      <div className="flex items-start">
+                        <span className="text-2xl mr-3">{getAlertIcon(alert.type)}</span>
+                        <div className="flex-1">
+                          <h4 className="font-semibold mb-1">{alert.title}</h4>
+                          <p className="text-sm mb-2">{alert.message}</p>
+                          {alert.action && (
+                            <button className="text-sm font-medium underline hover:no-underline">
+                              {alert.action}
+                            </button>
+                          )}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="bg-gray-50 border border-gray-200 text-gray-600 rounded-lg p-4">
+                  <p>No alerts at this time. Link your Opal card for personalized alerts.</p>
+                </div>
+              )}
             </div>
 
             {/* Transport Tips */}

@@ -2,15 +2,45 @@
 
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AddBusinessModal from "@/components/AddBusinessModal";
+import Cookies from "js-cookie";
 
 export default function DashboardPage() {
   const router = useRouter();
   const [modalOpen, setModalOpen] = useState(false);
+  const [username, setUsername] = useState<string>("");
+
+  useEffect(() => {
+    // Get the auth token from cookies
+    const token = Cookies.get('auth-token');
+
+    if (token) {
+      try {
+        // In a real app, you would decode the JWT token to get user info
+        // For now, we'll get the user data from session storage
+        const userDataString = sessionStorage.getItem('userData');
+        if (userDataString) {
+          const userData = JSON.parse(userDataString);
+          setUsername(userData.username || "User");
+        } else {
+          // Fallback if user data is not in session storage
+          setUsername("User");
+        }
+      } catch (error) {
+        console.error("Error parsing user data:", error);
+        setUsername("User");
+      }
+    } else {
+      // Redirect to login if no token is found
+      router.push("/auth");
+    }
+  }, [router]);
 
   const handleLogout = () => {
-    // In a real app, you would clear authentication tokens/cookies here
+    // Clear authentication tokens/cookies
+    Cookies.remove('auth-token');
+    sessionStorage.removeItem('userData');
     router.push("/auth");
   };
 
@@ -22,14 +52,20 @@ export default function DashboardPage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <h1 className="text-2xl font-bold text-white">Tripnosis</h1>
-              <span className="ml-2 text-sm text-blue-100">Sydney's secrets, served fresh daily</span>
+              <span className="ml-2 text-sm text-blue-100">Sydney&#39;s secrets, served fresh daily</span>
             </div>
-            <button
-              onClick={handleLogout}
-              className="px-4 py-2 text-sm font-medium text-white hover:text-blue-100 border border-blue-300 rounded-md hover:bg-blue-700 transition-colors"
-            >
-              Logout
-            </button>
+            <div className="flex items-center space-x-4">
+              <div className="text-white bg-blue-700 px-3 py-1 rounded-md">
+                <span className="mr-1">👋</span>
+                <span>{username}</span>
+              </div>
+              <button
+                onClick={handleLogout}
+                className="px-4 py-2 text-sm font-medium text-white hover:text-blue-100 border border-blue-300 rounded-md hover:bg-blue-700 transition-colors"
+              >
+                Logout
+              </button>
+            </div>
           </div>
         </div>
       </header>
@@ -174,6 +210,9 @@ export default function DashboardPage() {
           </div>
         </div>
       </div>
+
+      {/* Add Business Modal */}
+      <AddBusinessModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </main>
   );
 }

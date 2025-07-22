@@ -1,0 +1,889 @@
+{
+  "landmarks": [
+    {
+      "id": "1",
+      "name": "Sydney Opera House",
+      "description": "World-renowned performing arts venue and architectural masterpiece, a UNESCO World Heritage Site.",
+      "category": "iconic",
+      "location": "Bennelong Point, Sydney",
+      "openingHours": "Tours: 9:00 AM - 5:00 PM daily",
+      "admissionFee": "Exterior viewing: Free | Guided tours: $43 | Performances: Varies",
+      "estimatedVisitTime": "1-3 hours",
+      "highlights": [
+        "Iconic shell-shaped architecture",
+        "Concert Hall with world-class acoustics",
+        "Joan Sutherland Theatre",
+        "Harbour views from the forecourt",
+        "Guided architecture tours"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "Park Hyatt Sydney",
+          "rating": 5,
+          "priceRange": "$800-1200/night",
+          "distance": "0.3km",
+          "amenities": ["Harbour views", "Spa", "Fine dining", "Pool"]
+        },
+        {
+          "name": "Pullman Quay Grand Sydney Harbour",
+          "rating": 5,
+          "priceRange": "$400-600/night",
+          "distance": "0.5km",
+          "amenities": ["Harbour views", "Restaurant", "Gym", "Business center"]
+        },
+        {
+          "name": "Shangri-La Hotel Sydney",
+          "rating": 5,
+          "priceRange": "$500-800/night",
+          "distance": "0.8km",
+          "amenities": ["Harbour views", "Spa", "Multiple restaurants", "Pool"]
+        }
+      ],
+      "localTips": "Book performance tickets well in advance. Free outdoor concerts happen regularly. The best photos are from Mrs Macquarie's Chair at sunrise.",
+      "accessibility": "Wheelchair accessible with lifts and ramps. Audio tours available.",
+      "imageAlt": "Sydney Opera House with harbour bridge in background",
+      "photos": [
+        "https://images.unsplash.com/photo-1549180030-48bf079fb38a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1524293568345-75d62c3664f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Sydney Harbour Bridge",
+      "description": "Iconic steel arch bridge connecting Sydney CBD with North Shore, offering spectacular harbour views.",
+      "category": "iconic",
+      "location": "Sydney Harbour, connecting CBD to North Shore",
+      "openingHours": "Pedestrian walkway: 24/7 | BridgeClimb: Various times",
+      "admissionFee": "Walking: Free | BridgeClimb: $174-$388",
+      "estimatedVisitTime": "1-4 hours",
+      "highlights": [
+        "Pedestrian walkway with harbour views",
+        "BridgeClimb experience to the summit",
+        "Pylon Lookout museum",
+        "Historic engineering marvel",
+        "New Year's Eve fireworks vantage point"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "The Langham, Sydney",
+          "rating": 5,
+          "priceRange": "$400-700/night",
+          "distance": "1.2km",
+          "amenities": ["Spa", "Pool", "Fine dining", "Observatory Bar"]
+        },
+        {
+          "name": "Four Seasons Hotel Sydney",
+          "rating": 5,
+          "priceRange": "$500-900/night",
+          "distance": "1.0km",
+          "amenities": ["Harbour views", "Spa", "Restaurant", "Gym"]
+        }
+      ],
+      "localTips": "Walk across for free during the day. Sunrise and sunset offer the best lighting. Book BridgeClimb in advance for special occasions.",
+      "accessibility": "Pedestrian walkway is accessible. BridgeClimb has age and health restrictions.",
+      "imageAlt": "Sydney Harbour Bridge spanning across the harbour",
+      "photos": [
+        "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1548919973-5cef591cdbc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1570191913384-7b4ff11716e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Royal Botanic Gardens",
+      "description": "Historic botanical gardens featuring native and exotic plants with stunning harbour views.",
+      "category": "nature",
+      "location": "Mrs Macquaries Road, Sydney",
+      "openingHours": "7:00 AM - sunset daily",
+      "admissionFee": "Free entry | Guided tours: $35",
+      "estimatedVisitTime": "2-4 hours",
+      "highlights": [
+        "Mrs Macquarie's Chair viewpoint",
+        "Tropical Centre conservatories",
+        "Aboriginal Heritage Tour",
+        "Rose Garden and Herb Garden",
+        "Flying fox colony at sunset"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "InterContinental Sydney",
+          "rating": 5,
+          "priceRange": "$350-550/night",
+          "distance": "0.8km",
+          "amenities": ["Harbour views", "Pool", "Spa", "Multiple restaurants"]
+        },
+        {
+          "name": "The Westin Sydney",
+          "rating": 5,
+          "priceRange": "$300-500/night",
+          "distance": "1.0km",
+          "amenities": ["Central location", "Gym", "Restaurant", "Business center"]
+        }
+      ],
+      "localTips": "Visit at sunset to see the flying foxes. Free WiFi throughout. Perfect for picnics with harbour views.",
+      "accessibility": "Most paths are wheelchair accessible. Mobility scooters available for hire.",
+      "imageAlt": "Lush gardens with Sydney Opera House visible in background",
+      "photos": [
+        "https://images.unsplash.com/photo-1494122353634-c310f45a6d3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1529981188441-8a2e6fe3a06f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "The Rocks",
+      "description": "Historic area with cobblestone streets, weekend markets, galleries, and traditional pubs.",
+      "category": "historic",
+      "location": "The Rocks, Sydney",
+      "openingHours": "Area: 24/7 | Markets: Sat-Sun 10:00 AM - 5:00 PM",
+      "admissionFee": "Free to explore | Individual attractions vary",
+      "estimatedVisitTime": "3-5 hours",
+      "highlights": [
+        "Weekend markets with local crafts",
+        "Historic sandstone buildings",
+        "Sydney Harbour Bridge views",
+        "Traditional Australian pubs",
+        "Aboriginal Dreaming tours"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "Harbour Rocks Hotel Sydney",
+          "rating": 4,
+          "priceRange": "$200-350/night",
+          "distance": "0.1km",
+          "amenities": ["Historic building", "Restaurant", "Bar", "Central location"]
+        },
+        {
+          "name": "The Russell Hotel",
+          "rating": 4,
+          "priceRange": "$180-280/night",
+          "distance": "0.2km",
+          "amenities": ["Boutique hotel", "Rooftop garden", "Historic charm"]
+        }
+      ],
+      "localTips": "Visit on weekends for the markets. Try the historic pubs like The Hero of Waterloo. Free walking tours available.",
+      "accessibility": "Cobblestone streets can be challenging. Most shops and restaurants are accessible.",
+      "imageAlt": "Historic cobblestone streets with sandstone buildings",
+      "photos": [
+        "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1516023864997-f387655828cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1577979749830-f1d742b96791?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Vic in the Park",
+      "description": "A popular pub known for its lively atmosphere and great selection of drinks.",
+      "category": "pub",
+      "location": "123 Park Street, Sydney",
+      "openingHours": "Mon-Sun: 12:00 PM - 12:00 AM",
+      "admissionFee": "Free entry",
+      "estimatedVisitTime": "2-3 hours",
+      "highlights": [
+        "Lively atmosphere",
+        "Great selection of drinks",
+        "Live music on weekends"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "Park Street Inn",
+          "rating": 3,
+          "priceRange": "$150-220/night",
+          "distance": "0.3km",
+          "amenities": ["Budget-friendly", "Free Wi-Fi", "Continental breakfast"]
+        },
+        {
+          "name": "City Central Hostel",
+          "rating": 3,
+          "priceRange": "$50-90/night",
+          "distance": "0.5km",
+          "amenities": ["Shared kitchen", "Communal lounge", "Laundry facilities"]
+        },
+        {
+          "name": "The Urban Hotel",
+          "rating": 4,
+          "priceRange": "$180-250/night",
+          "distance": "0.7km",
+          "amenities": ["Restaurant", "Bar", "Gym", "Business center"]
+        }
+      ],
+      "localTips": "Try the signature cocktails and enjoy the live bands on Friday nights.",
+      "accessibility": "Wheelchair accessible entrance and facilities.",
+      "imageAlt": "Busy pub with patrons enjoying drinks",
+      "photos": [
+        "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1497644083578-611b798c60f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Bondi Beach",
+      "description": "Iconic Sydney beach known for its golden sands, surf culture, and vibrant atmosphere.",
+      "category": "nature",
+      "location": "Bondi Beach, Sydney",
+      "openingHours": "24/7 (Lifeguards: 7:00 AM - 7:00 PM)",
+      "admissionFee": "Free entry",
+      "estimatedVisitTime": "Half day to full day",
+      "highlights": [
+        "Surf lessons and board rentals",
+        "Bondi to Coogee coastal walk",
+        "Bondi Icebergs ocean pool",
+        "Beachside cafes and restaurants",
+        "Spectacular sunrise views"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "QT Bondi",
+          "rating": 5,
+          "priceRange": "$300-450/night",
+          "distance": "0.2km",
+          "amenities": ["Beachfront", "Modern apartments", "Gym"]
+        },
+        {
+          "name": "Adina Apartment Hotel Bondi Beach",
+          "rating": 4,
+          "priceRange": "$220-350/night",
+          "distance": "0.3km",
+          "amenities": ["Pool", "Kitchen facilities", "Gym", "Close to shops"]
+        },
+        {
+          "name": "Hotel Bondi",
+          "rating": 3,
+          "priceRange": "$180-280/night",
+          "distance": "0.1km",
+          "amenities": ["Beachfront", "Restaurant", "Bar", "Historic building"]
+        }
+      ],
+      "localTips": "Visit early morning to avoid crowds. For swimming, stay between the flags. Sunday markets for local goods.",
+      "accessibility": "Beach wheelchairs available. Accessible facilities at pavilion.",
+      "imageAlt": "Aerial view of Bondi Beach with clear blue water and golden sand",
+      "photos": [
+        "https://images.unsplash.com/photo-1520707321543-74e5ad5e9c4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1523428800291-bc0cfec20ec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Yochi",
+      "description": "A popular yogurt shop known for its fresh and healthy options.",
+      "category": "restaurant",
+      "location": "78 Newtown Road, Newtown",
+      "openingHours": "Mon-Sun: 9:00 AM - 9:00 PM",
+      "admissionFee": "Free entry",
+      "estimatedVisitTime": "30 mins - 1 hour",
+      "highlights": [
+        "Fresh yogurt options",
+        "Healthy toppings",
+        "Friendly service"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "Newtown Hotel",
+          "rating": 3,
+          "priceRange": "$120-180/night",
+          "distance": "0.4km",
+          "amenities": ["Free Wi-Fi", "Cafe", "Central Newtown location"]
+        },
+        {
+          "name": "Urban Newtown",
+          "rating": 4,
+          "priceRange": "$180-240/night",
+          "distance": "0.6km",
+          "amenities": ["Eco-friendly", "Rooftop terrace", "Bike rentals"]
+        },
+        {
+          "name": "The Collectionist",
+          "rating": 4,
+          "priceRange": "$200-300/night",
+          "distance": "1.0km",
+          "amenities": ["Unique room designs", "Contactless check-in", "Courtyard"]
+        }
+      ],
+      "localTips": "Try the seasonal flavors.",
+      "accessibility": "Wheelchair accessible.",
+      "imageAlt": "Yochi yogurt shop interior"
+    },
+    {
+      "id": "8",
+      "name": "Keg and Brew",
+      "description": "A lively pub with a great selection of craft beers and pub food.",
+      "category": "pub",
+      "location": "22 Brew Street, Sydney",
+      "openingHours": "Mon-Sun: 11:00 AM - 11:00 PM",
+      "admissionFee": "Free entry",
+      "estimatedVisitTime": "2-3 hours",
+      "highlights": [
+        "Craft beers",
+        "Pub food",
+        "Sports screens",
+        "Rooftop bar"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "The Ultimo",
+          "rating": 4,
+          "priceRange": "$150-230/night",
+          "distance": "0.5km",
+          "amenities": ["Boutique hotel", "Free Wi-Fi", "Cafe"]
+        },
+        {
+          "name": "Capitol Square Hotel",
+          "rating": 3,
+          "priceRange": "$120-180/night",
+          "distance": "0.7km",
+          "amenities": ["Budget-friendly", "Central location", "24-hour reception"]
+        },
+        {
+          "name": "Sydney Central YHA",
+          "rating": 4,
+          "priceRange": "$30-120/night",
+          "distance": "0.9km",
+          "amenities": ["Rooftop pool", "Communal kitchen", "Tour desk", "Budget option"]
+        }
+      ],
+      "localTips": "Thursday night trivia is popular with locals. Try the rotating seasonal beer taps.",
+      "accessibility": "Main floor accessible, upper floor via stairs only.",
+      "imageAlt": "Keg and Brew pub with patrons enjoying craft beers"
+    },
+    {
+      "id": "9",
+      "name": "Mumu",
+      "description": "Popular Sydney eatery known for its fusion cuisine and vibrant atmosphere.",
+      "category": "restaurant",
+      "location": "280 Cleveland Street, Surry Hills",
+      "openingHours": "Tue-Sun: 5:00 PM - 10:00 PM",
+      "admissionFee": "Free entry | Meals: $20-35",
+      "estimatedVisitTime": "1-2 hours",
+      "highlights": [
+        "Signature fusion dishes",
+        "Craft cocktails",
+        "Cozy atmosphere",
+        "Local ingredients"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "Adina Apartment Hotel Surry Hills",
+          "rating": 4,
+          "priceRange": "$180-260/night",
+          "distance": "0.5km",
+          "amenities": ["Self-catering", "Gym", "24-hour reception", "Laundry facilities"]
+        },
+        {
+          "name": "57 Hotel",
+          "rating": 3,
+          "priceRange": "$140-200/night",
+          "distance": "0.7km",
+          "amenities": ["Boutique style", "Free Wi-Fi", "Continental breakfast"]
+        }
+      ],
+      "localTips": "Book ahead on weekends as it gets very busy. Try their signature cocktails with your meal.",
+      "accessibility": "Ground floor access with some tight spaces inside.",
+      "imageAlt": "Interior of Mumu restaurant with diners enjoying fusion cuisine"
+    },
+    {
+      "id": "10",
+      "name": "Totties",
+      "description": "A charming boutique venue offering specialty drinks and a relaxed environment.",
+      "category": "pub",
+      "location": "172 Enmore Road, Enmore",
+      "openingHours": "Wed-Sun: 4:00 PM - 12:00 AM",
+      "admissionFee": "Free entry",
+      "estimatedVisitTime": "2-3 hours",
+      "highlights": [
+        "Specialty cocktails",
+        "Local craft beers",
+        "Intimate setting",
+        "Live acoustic music"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "Cambridge Lodge Guest House",
+          "rating": 3,
+          "priceRange": "$80-150/night",
+          "distance": "1.2km",
+          "amenities": ["Budget-friendly", "Shared kitchen", "Free Wi-Fi"]
+        },
+        {
+          "name": "Enmore Boutique Stays",
+          "rating": 4,
+          "priceRange": "$170-250/night",
+          "distance": "0.4km",
+          "amenities": ["Private apartments", "Self check-in", "Close to entertainment"]
+        }
+      ],
+      "localTips": "Try to visit on a Thursday for their weekly specials and live music sessions.",
+      "accessibility": "Small step at entrance, narrow spaces inside.",
+      "imageAlt": "Cozy interior of Totties with ambient lighting"
+    },
+    {
+      "id": "11",
+      "name": "Three Sisters",
+      "description": "Iconic rock formation in the Blue Mountains offering spectacular panoramic views.",
+      "category": "nature",
+      "location": "Echo Point, Katoomba, Blue Mountains",
+      "openingHours": "Lookout: 24/7 | Visitor Center: 9:00 AM - 5:00 PM",
+      "admissionFee": "Free entry | Guided tours: $30-50",
+      "estimatedVisitTime": "1-4 hours",
+      "highlights": [
+        "Three massive sandstone peaks",
+        "Aboriginal cultural significance",
+        "Scenic walking trails",
+        "Echo Point Lookout",
+        "Spectacular sunset views"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "Lilianfels Blue Mountains Resort & Spa",
+          "rating": 5,
+          "priceRange": "$300-500/night",
+          "distance": "0.5km",
+          "amenities": ["Luxury spa", "Fine dining", "Garden views", "Pool"]
+        },
+        {
+          "name": "Echo Point Motor Inn",
+          "rating": 3,
+          "priceRange": "$120-180/night",
+          "distance": "0.3km",
+          "amenities": ["Mountain views", "Free parking", "Family rooms"]
+        },
+        {
+          "name": "The Carrington Hotel",
+          "rating": 4,
+          "priceRange": "$200-350/night",
+          "distance": "1.5km",
+          "amenities": ["Historic building", "Restaurant", "Bar", "Grand dining room"]
+        }
+      ],
+      "localTips": "Visit early morning to avoid crowds. The lighting is best for photos in late afternoon. Wear sturdy shoes if planning to hike.",
+      "accessibility": "Main lookout is wheelchair accessible. Some trails have stairs and rough terrain.",
+      "imageAlt": "The Three Sisters rock formation against blue mountains backdrop"
+    },
+    {
+      "id": "12",
+      "name": "Monte Cristo Homestead",
+      "description": "Australia's most haunted house located in Junee, a few hours from Sydney, known for paranormal activities and ghost tours.",
+      "category": "historic",
+      "location": "Junee, NSW (4 hours from Sydney)",
+      "openingHours": "Sat-Sun: 10:00 AM - 4:00 PM | Ghost tours: Friday and Saturday nights",
+      "admissionFee": "Day tours: $25 | Ghost tours: $110",
+      "estimatedVisitTime": "2-3 hours (day tour) | 4-5 hours (ghost tour)",
+      "highlights": [
+        "Victorian manor with tragic history",
+        "Paranormal investigation tours",
+        "Historical artifacts and period furniture",
+        "Ghost stories and legends",
+        "Beautiful countryside setting"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "Junee Motor Inn",
+          "rating": 3,
+          "priceRange": "$90-140/night",
+          "distance": "3.2km",
+          "amenities": ["Free parking", "Air conditioning", "Family rooms"]
+        },
+        {
+          "name": "Commercial Hotel Junee",
+          "rating": 3,
+          "priceRange": "$80-120/night",
+          "distance": "3.5km",
+          "amenities": ["Pub atmosphere", "Basic accommodations", "Restaurant"]
+        }
+      ],
+      "localTips": "Book ghost tours well in advance. Bring warm clothes even in summer as the house can be cold. Not recommended for young children or those easily frightened.",
+      "accessibility": "Limited accessibility with stairs and no elevators.",
+      "imageAlt": "Spooky Monte Cristo Homestead at dusk"
+    },
+    {
+      "id": "13",
+      "name": "Camperdown Cemetery",
+      "description": "Historic cemetery established in 1848 with beautiful Victorian monuments and significant heritage gravestones.",
+      "category": "historic",
+      "location": "Church Street, Newtown",
+      "openingHours": "Daily: 8:00 AM - 4:00 PM",
+      "admissionFee": "Free entry",
+      "estimatedVisitTime": "1-2 hours",
+      "highlights": [
+        "Historic gravestones and monuments",
+        "Beautiful iron gates",
+        "Gothic chapel",
+        "Peaceful gardens",
+        "Walking tours"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "The Urban Newtown",
+          "rating": 4,
+          "priceRange": "$180-260/night",
+          "distance": "0.7km",
+          "amenities": ["Modern design", "Eco-friendly", "Close to restaurants"]
+        },
+        {
+          "name": "Newtown Space",
+          "rating": 3,
+          "priceRange": "$150-210/night",
+          "distance": "0.5km",
+          "amenities": ["Self-contained apartments", "Kitchen facilities", "Free Wi-Fi"]
+        }
+      ],
+      "localTips": "Sunday afternoons often have volunteer-led historical tours. Perfect for photography enthusiasts.",
+      "accessibility": "Mostly flat paths but some areas have uneven ground.",
+      "imageAlt": "Historic gravestones in Camperdown Cemetery"
+    },
+    {
+      "id": "14",
+      "name": "The Soda Factory",
+      "description": "Hidden retro-themed bar and music venue behind a fake Bobby's Boss Dogs shopfront.",
+      "category": "pub",
+      "location": "16 Wentworth Avenue, Surry Hills",
+      "openingHours": "Mon-Sun: 5:00 PM - 1:00 AM",
+      "admissionFee": "Free entry (except special events)",
+      "estimatedVisitTime": "2-4 hours",
+      "highlights": [
+        "1950s American diner aesthetic",
+        "Retro cocktails and milkshakes",
+        "Live music and DJs",
+        "Dollar hot dogs on Tuesdays",
+        "Hidden speakeasy entrance"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "Cambridge Hotel Sydney",
+          "rating": 3,
+          "priceRange": "$140-220/night",
+          "distance": "0.3km",
+          "amenities": ["Rooftop pool", "Restaurant", "Bar", "Gym"]
+        },
+        {
+          "name": "Rydges Sydney Central",
+          "rating": 4,
+          "priceRange": "$180-300/night",
+          "distance": "0.4km",
+          "amenities": ["Indoor pool", "Fitness center", "Restaurant", "Bar"]
+        },
+        {
+          "name": "Adina Apartment Hotel Surry Hills",
+          "rating": 4,
+          "priceRange": "$190-280/night",
+          "distance": "0.6km",
+          "amenities": ["Apartment-style", "Kitchen", "Laundry facilities"]
+        }
+      ],
+      "localTips": "Look for the hot dog shop front to find the entrance. Tuesday's $1 hot dog night is very popular - arrive early.",
+      "accessibility": "Level entrance but crowded spaces inside.",
+      "imageAlt": "Retro interior of The Soda Factory with neon signs"
+    },
+    {
+      "id": "15",
+      "name": "Freshwater Beach",
+      "description": "Historic beach where surfing was first demonstrated in Australia, offering great waves and a relaxed local atmosphere.",
+      "category": "nature",
+      "location": "Freshwater, Northern Beaches",
+      "openingHours": "24/7 (Lifeguards: 7:00 AM - 6:00 PM)",
+      "admissionFee": "Free entry",
+      "estimatedVisitTime": "2-5 hours",
+      "highlights": [
+        "Birthplace of Australian surfing",
+        "Pristine golden sand",
+        "Great surfing conditions",
+        "Ocean pool",
+        "Beachside cafes"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "The Harbord Hotel",
+          "rating": 4,
+          "priceRange": "$180-280/night",
+          "distance": "0.3km",
+          "amenities": ["Beachfront", "Restaurant", "Bar", "Renovated rooms"]
+        },
+        {
+          "name": "Quest Manly",
+          "rating": 4,
+          "priceRange": "$220-350/night",
+          "distance": "2.5km",
+          "amenities": ["Apartment-style", "Kitchen", "Laundry", "Close to ferry"]
+        }
+      ],
+      "localTips": "Visit early morning for the best surf conditions. Pilu restaurant nearby is excellent for lunch with ocean views.",
+      "accessibility": "Beach access ramps available. Beach wheelchairs can be arranged.",
+      "imageAlt": "Freshwater Beach with surfers in the water"
+    },
+    {
+      "id": "16",
+      "name": "Blue Water High filming locations",
+      "description": "Visit the beaches and locations where the popular Australian teen TV series 'Blue Water High' was filmed.",
+      "category": "cultural",
+      "location": "Manly and Northern Beaches",
+      "openingHours": "Public areas: 24/7",
+      "admissionFee": "Free to explore",
+      "estimatedVisitTime": "3-5 hours",
+      "highlights": [
+        "Manly Beach (main filming location)",
+        "Solar Surf Shop locations",
+        "Shelly Beach",
+        "Scenic coastal walks",
+        "Filming location tour spots"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "Novotel Sydney Manly Pacific",
+          "rating": 4,
+          "priceRange": "$250-400/night",
+          "distance": "Central to locations",
+          "amenities": ["Beachfront", "Pool", "Restaurant", "Ocean views"]
+        },
+        {
+          "name": "The Sebel Manly Beach",
+          "rating": 4,
+          "priceRange": "$230-380/night",
+          "distance": "Central to locations",
+          "amenities": ["Beachfront apartments", "Balconies", "Kitchenettes"]
+        }
+      ],
+      "localTips": "Take the Manly ferry from Circular Quay for spectacular harbor views on your way. Visit the real surf school that inspired the show.",
+      "accessibility": "Most public areas are accessible, but some beach locations have limited accessibility.",
+      "imageAlt": "Manly Beach where Blue Water High was filmed"
+    },
+    {
+      "id": "17",
+      "name": "Burwood Night Market",
+      "description": "Vibrant Asian night market featuring a wide variety of street food, performances, and cultural experiences.",
+      "category": "cultural",
+      "location": "Burwood Park, Burwood",
+      "openingHours": "Fridays: 5:00 PM - 11:00 PM (seasonal)",
+      "admissionFee": "Free entry",
+      "estimatedVisitTime": "2-3 hours",
+      "highlights": [
+        "Authentic Asian street food",
+        "Cultural performances",
+        "Handmade crafts and goods",
+        "Family-friendly atmosphere",
+        "Live music"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "Burwood Serviced Apartments",
+          "rating": 3,
+          "priceRange": "$150-220/night",
+          "distance": "0.5km",
+          "amenities": ["Self-catering", "Free parking", "Family rooms"]
+        },
+        {
+          "name": "Strathfield Hotel",
+          "rating": 3,
+          "priceRange": "$120-180/night",
+          "distance": "2.1km",
+          "amenities": ["Budget-friendly", "Restaurant", "Bar"]
+        }
+      ],
+      "localTips": "Bring cash as not all vendors accept cards. Come hungry and try the diverse range of foods from different Asian cultures.",
+      "accessibility": "Flat park grounds are mostly accessible.",
+      "imageAlt": "Bustling night market with food stalls in Burwood Park"
+    },
+    {
+      "id": "18",
+      "name": "Gleebooks Café",
+      "description": "Charming bookstore and café in Glebe offering literary events, great coffee, and a cozy atmosphere for book lovers.",
+      "category": "cultural",
+      "location": "49 Glebe Point Road, Glebe",
+      "openingHours": "Mon-Fri: 9:00 AM - 7:00 PM | Sat-Sun: 9:00 AM - 6:00 PM",
+      "admissionFee": "Free entry",
+      "estimatedVisitTime": "1-3 hours",
+      "highlights": [
+        "Extensive book collection",
+        "Author talks and book launches",
+        "Specialty coffee and baked goods",
+        "Literary atmosphere",
+        "Second-hand book section"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "Verona Guest House",
+          "rating": 3,
+          "priceRange": "$120-180/night",
+          "distance": "0.6km",
+          "amenities": ["Heritage building", "Free Wi-Fi", "Garden"]
+        },
+        {
+          "name": "The Urban Newtown",
+          "rating": 4,
+          "priceRange": "$180-260/night",
+          "distance": "2.0km",
+          "amenities": ["Modern design", "Art installations", "Close to restaurants"]
+        }
+      ],
+      "localTips": "Check their events calendar for author talks and book signings. The upstairs section has comfortable reading nooks.",
+      "accessibility": "Main floor is accessible, upper floor via stairs only.",
+      "imageAlt": "Interior of Gleebooks with bookshelves and café tables"
+    },
+    {
+      "id": "19",
+      "name": "Goros",
+      "description": "Japanese-inspired bar and entertainment venue with karaoke rooms, arcade games, and izakaya-style food.",
+      "category": "pub",
+      "location": "84-86 Mary Street, Surry Hills",
+      "openingHours": "Wed-Thu: 5:00 PM - 12:00 AM | Fri-Sat: 5:00 PM - 3:00 AM | Sun: 5:00 PM - 10:00 PM",
+      "admissionFee": "Free entry | Karaoke rooms: $10-20 per person/hour",
+      "estimatedVisitTime": "3-5 hours",
+      "highlights": [
+        "Private karaoke rooms",
+        "Japanese arcade games",
+        "DJ nights on weekends",
+        "Japanese-inspired cocktails",
+        "Izakaya-style food menu"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "57 Hotel",
+          "rating": 3,
+          "priceRange": "$140-220/night",
+          "distance": "0.4km",
+          "amenities": ["Boutique style", "Free Wi-Fi", "Complimentary breakfast"]
+        },
+        {
+          "name": "Adina Apartment Hotel Surry Hills",
+          "rating": 4,
+          "priceRange": "$190-280/night",
+          "distance": "0.5km",
+          "amenities": ["Self-contained apartments", "Kitchenette", "Gym"]
+        },
+        {
+          "name": "The Ultimo",
+          "rating": 4,
+          "priceRange": "$160-240/night",
+          "distance": "1.0km",
+          "amenities": ["Boutique hotel", "Zodiac-themed rooms", "Free Wi-Fi"]
+        }
+      ],
+      "localTips": "Book karaoke rooms in advance on weekends. Try the Japanese whiskey selection and chicken karaage.",
+      "accessibility": "Main floor accessible, some gaming areas have steps.",
+      "imageAlt": "Colorful interior of Goros with Japanese-inspired decorations"
+    },
+    {
+      "id": "20",
+      "name": "Grifter Brewing Co.",
+      "description": "Popular craft brewery in Marrickville offering brewery tours, tasting flights, and a relaxed taproom experience.",
+      "category": "pub",
+      "location": "1/391 Enmore Road, Marrickville",
+      "openingHours": "Wed-Thu: 5:00 PM - 9:00 PM | Fri: 4:00 PM - 10:00 PM | Sat: 12:00 PM - 10:00 PM | Sun: 12:00 PM - 8:00 PM",
+      "admissionFee": "Free entry | Brewery tours: $25 (includes tasting)",
+      "estimatedVisitTime": "2-3 hours",
+      "highlights": [
+        "Craft beer tasting flights",
+        "Brewery tours",
+        "Industrial-chic taproom",
+        "Food trucks on weekends",
+        "Dog-friendly venue"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "The Marrickville Hotel",
+          "rating": 3,
+          "priceRange": "$140-200/night",
+          "distance": "0.7km",
+          "amenities": ["Local atmosphere", "Bar", "Close to brewery district"]
+        },
+        {
+          "name": "Newtown Digs",
+          "rating": 3,
+          "priceRange": "$130-190/night",
+          "distance": "1.2km",
+          "amenities": ["Self-contained", "Kitchen", "Free street parking"]
+        }
+      ],
+      "localTips": "Try their signature Pale Ale. Saturday afternoons have a great atmosphere with food trucks and local crowd.",
+      "accessibility": "Level entrance with spacious interior.",
+      "imageAlt": "Interior of Grifter Brewing Co. taproom with beer taps"
+    },
+    {
+      "id": "21",
+      "name": "Kangaroo Valley",
+      "description": "Picturesque rural valley two hours from Sydney featuring stunning scenery, wildlife, and historic Hampden Bridge.",
+      "category": "nature",
+      "location": "Kangaroo Valley, Southern Highlands (2 hours from Sydney)",
+      "openingHours": "Village shops: 9:00 AM - 5:00 PM | Natural areas: 24/7",
+      "admissionFee": "Free to explore | Activities and tours vary",
+      "estimatedVisitTime": "Day trip or weekend",
+      "highlights": [
+        "Historic Hampden Bridge",
+        "Kayaking on Kangaroo River",
+        "Wildlife spotting",
+        "Scenic hiking trails",
+        "Charming village shops"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "The Laurels B&B",
+          "rating": 4,
+          "priceRange": "$200-350/night",
+          "distance": "Central in valley",
+          "amenities": ["Country gardens", "Historic property", "Breakfast included"]
+        },
+        {
+          "name": "Kangaroo Valley Bush Retreat",
+          "rating": 4,
+          "priceRange": "$250-400/night",
+          "distance": "5km from center",
+          "amenities": ["Bush setting", "Wedding venue", "Group accommodations"]
+        },
+        {
+          "name": "Luxury Eco Cabins",
+          "rating": 5,
+          "priceRange": "$300-450/night",
+          "distance": "Various locations",
+          "amenities": ["Private settings", "Wildlife views", "Self-contained"]
+        }
+      ],
+      "localTips": "Visit the Friendly Inn for classic country pub meals. Don't miss the Pioneer Village Museum to learn about local history.",
+      "accessibility": "Village center is mostly accessible, natural areas have varied terrain.",
+      "imageAlt": "Scenic view of Kangaroo Valley with historic bridge"
+    },
+    {
+      "id": "22",
+      "name": "Old Mate's Place",
+      "description": "Hidden rooftop cocktail bar in the CBD with a secret garden atmosphere and excellent craft cocktails.",
+      "category": "pub",
+      "location": "Level 4, 199 Clarence Street, Sydney",
+      "openingHours": "Wed-Fri: 4:00 PM - 2:00 AM | Sat: 2:00 PM - 2:00 AM | Sun: 2:00 PM - 12:00 AM",
+      "admissionFee": "Free entry",
+      "estimatedVisitTime": "2-3 hours",
+      "highlights": [
+        "Rooftop garden bar",
+        "Craft cocktails",
+        "Hidden entrance",
+        "Speakeasy vibe",
+        "Gourmet bar food"
+      ],
+      "nearbyHotels": [
+        {
+          "name": "The Tank Stream Hotel",
+          "rating": 4,
+          "priceRange": "$230-350/night",
+          "distance": "0.4km",
+          "amenities": ["Central location", "Restaurant", "Business center"]
+        },
+        {
+          "name": "QT Sydney",
+          "rating": 5,
+          "priceRange": "$300-500/night",
+          "distance": "0.5km",
+          "amenities": ["Boutique design", "Spa", "Multiple restaurants", "Quirky style"]
+        },
+        {
+          "name": "The Grace Hotel",
+          "rating": 4,
+          "priceRange": "$220-380/night",
+          "distance": "0.3km",
+          "amenities": ["Historic building", "Pool", "Gym", "Restaurant"]
+        }
+      ],
+      "localTips": "Look for the unmarked door and walk up several flights of stairs to find this hidden gem. Rooftop is perfect at sunset.",
+      "accessibility": "Limited accessibility due to multiple flights of stairs and no elevator.",
+      "imageAlt": "Rooftop garden bar at Old Mate's Place with city views"
+    }
+  ]
+}
